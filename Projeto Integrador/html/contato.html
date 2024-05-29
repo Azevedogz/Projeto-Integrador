@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Byte Rent</title>
+    <link rel="stylesheet" href="/styles/globals.css"/>
+    <link rel="stylesheet" href="/styles/contato.css">
+  </head>
+  <body>
+    <!-- <div class="navbar">
+      <div class="header-inner-content">
+        <h1 class="logo">BYTE<span>RENT</span></h1>
+
+        <nav>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="produtos.html">Produtos</a></li>
+            <li><a href="contato.html">Contato</a></li>
+            <li><a href="login.html">Login</a></li>
+            <li><a href="cadastro.html">Cadastro</a></li>
+          </ul>
+        </nav>
+        <div class="nav-icons-conteiner">
+          <div class="meu-carrinho">
+            <a href="meucarrinho.html"><img src="/images/cart.png" /></a>
+          </div>
+          <img src="/images/menu.png" class="menu-botton" />
+        </div>
+      </div>
+    </div> -->
+
+    <section>
+        <h2>Contato</h2>
+        <form action="https://api.staticforms.xyz/submit" method="post">
+            <label>Nome</label>
+            <input type="text" name="name" placeholder="Digite seu nome" autocomplete="off" required>
+            <label>Email</label>
+            <input type="email" name="email" placeholder="Digite seu email" autocomplete="off" required>
+            <label>Mensagem</label>
+            <textarea name="message" cols="30" rows="10" placeholder="Digite sua mensagem" required></textarea>
+            <!-- <a href="index.html"><button type="submit">Enviar</button></a>
+            <input type="hidden" name="accessKey" value="042be0d3-84fa-4ae8-aaed-2434cda72cac"> -->
+
+            <button class="butao"><a href="index.html">Home</a></button>
+        </form>
+    </section>
+
+    <script>
+      const navbar = document.querySelector(".navbar");
+      const menuButton = document.querySelector(".menu-botton");
+
+      menuButton.addEventListener("click", () => {
+        navbar.classList.toggle("show-menu");
+      }); 
+    </script>
+  </body>
+</html>
