@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="globals.css" />
+    <link rel="stylesheet" href="xbox.css" />
+  </head>
+  <body>
+    <div class="navbar">
+      <div class="header-inner-content">
+        <h1 class="logo">BYTE<span>RENT</span></h1>
+
+        <nav>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="produtos.html">Produtos</a></li>
+            <li><a href="contato.html">Contato</a></li>
+            <li><a href="login.html">Login</a></li>
+            <li><a href="cadastro.html">Cadastro</a></li>
+          </ul>
+        </nav>
+        <div class="nav-icons-conteiner">
+          <div class="meu-carrinho">
+            <a href="meucarrinho.html"><img src="cart.png" /></a>
+          </div>
+          <img src="menu.png" class="menu-botton" />
+        </div>
+      </div>
+    </div>
+
+    <!-- <div class="container">
+      <h1>Console Xbox Series X, Microsoft, 1Tb, Controle Sem Fio - Preto</h1>
+      <div class="content">
+        <div class="xbox">
+          <img src="product-12.png" alt="" srcset="" />
+        </div>
+        <div class="preco-produto">
+          <p class="Vendido">Vendido e entregue por ByteRent <span>Em estoque</span></p>
+          <div class="preco-btn">
+            <div class="div-preco">
+              <h1>R$ 4000</h1>
+              <p>A vista no PIX com ate <strong>5% OFF</strong></p>
+            </div>
+            <div class="botoes">
+              <button class="COMPRAR">COMPRAR</button>
+              <button class="carrinho-img">
+                <img src="carrinho.png" alt="" />
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div> -->
+
+    <main>
+      <section>
+        <div class="container">
+          <div class="left-side">
+            <div class="items">
+              <div class="select-image">
+                <img src="product-12.png" alt="" />
+              </div>
+              <div class="thumbnails">
+                <div class="thumbnail">
+                  <img src="produto-12-2.jpg" alt="" />
+                </div>
+
+                <div class="thumbnail">
+                  <img src="produto-12-3.jpg" />
+                </div>
+
+                <div class="thumbnail">
+                  <img src="produto-12-4.jpg" alt="" />
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="right-side">
+            <div class="content">
+              <h6>BYTERENT</h6>
+              <h1>XBOX SERIES X</h1>
+              <p>
+                Em até 10x de R$ 479,99 sem juros no cartão Ou em 1x no cartão
+                com até 5% OFF
+              </p>
+              <span class="price">R$ 4000.00</span>
+              <span class="off">R$ 5000.00</span>
+
+              <div class="options">
+                <div class="amount">
+                  <div class="minus">
+                    <img src="" alt="" />
+                  </div>
+                  <span>0</span>
+                  <div class="plus">
+                    <img src="" alt="" />
+                  </div>
+                </div>
+              </div>
+
+              <a href="" class="button"><img src="" alt="" />add to cart</a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <script>
+      const navbar = document.querySelector(".navbar");
+      const menuButton = document.querySelector(".menu-botton");
+
+      menuButton.addEventListener("click", () => {
+        navbar.classList.toggle("show-menu");
+      });
+    </script>
+  </body>
+</html>
