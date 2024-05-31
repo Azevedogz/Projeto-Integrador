@@ -45,7 +45,7 @@
     width: 100%;
     align-items: center;
     justify-content: center;
-    height: calc(100vh - 85px);
+    height: calc(100vh - 70px);
     gap: 100px;
 }
 
@@ -113,6 +113,13 @@
     color: #ccc;
 }
 
+.action-buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    flex-wrap: wrap;
+}
+
 .options{
     display: flex;
     gap: 20px;
@@ -138,7 +145,6 @@
 }
 
 .button{
-    display: inline-block;
     text-decoration: none;
     color: white;
     background-color:hsl(219,9%,45%) ;
@@ -147,7 +153,7 @@
     display: flex;
     align-items: center;
     width: fit-content;
-    gap: 5px;
+    gap: 6px;
     font-size: 12px;
     font-weight: 700;
 }
@@ -156,4 +162,19 @@
    width: 14px; 
 }
 
+@media (max-width: 1024px) {
+    .container {
+        flex-direction: column;
+        height: auto;
+        padding-block: 66px;
+        gap: 48px;
+    }
 
+    .left-side, .right-side {
+        width: auto;
+    }
+
+    .action-buttons {
+        flex-direction: row;
+    }
+}
